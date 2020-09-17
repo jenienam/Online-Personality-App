@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+      <!--AOS CSS-->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+      <!-- My CSS style sheet-->
+      <link rel="stylesheet" type="text/css" href="static/css/style.css">
+
+      <title>Social Media Personality Type</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-info px-2 py-0">
+    <a class="navbar-brand text-white font-family-serif bg-info p-2 ml-5" href="/">
+      <img src="static/images/brain-icon.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Social Media Personality Type</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="data">Data Sources</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about">About Us</a>
+          </li>
+        </ul>
+      </div>
+  
+</nav>
+
+<header class="masthead">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center">
+      <div class="col-12 text-center">
+        <h1 class="header">What's Your Personality Type?</h1>
+        <p class="tagline">Can we guess your personality type based on how you post to social media?</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="container pt-5 px-0 pb-5">
+  <div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-light">
+      <h2 class="text-info text-center pt-4 pl-2 pr-2 pb-2">Myers-Briggs Trait Indicator: 16 Personality Types</h2>
+      <hr>
+      <br>
+      <div class = "row">
+        <div class="col-lg-2 col-md-2 col-s-2 col-xs-2"></div>
+        <div class="col-lg-8 col-md-8 col-s-8 col-xs-8 bg-light">
+          <h4 class="text-info text-center">What's Your Personality Type?</h4>
+          <br>
+          <form action = "reddit" method = "POST">
+            <div class="input-group mb-3">
+              <input type="text" name="reddit-username" class="form-control" method="post" placeholder="Reddit username">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" name="submit_button" value="reddit">Submit</button>
+              </div>
+            </div>
+          </form>
+          <form action = "twitter" method = "POST">
+            <div class="input-group mb-3">
+              <input type="text" name="twitter-username" class="form-control" method="post" placeholder="Twitter username">
+              <div class="input-group-append">
+                <button class="btn btn-outline-secondary" type="submit" name="submit_button" value="twitter">Submit</button>
+              </div>
+            </div>
+          </form>
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2"></div>
+          <br>
+          <hr>
+          <br>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 bg-light">
+          <img src="static/images/personality-types-small.png" class="mr-2 float-left" alt="Image from 16personalities.com">
+        </div>
+        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 bg-light">
+          <h4 class="text-info">History of the MBTI</h4>
+          <p>The Myers-Briggs Trait Indicator is a questionnaire-based system that determines differing psychological preferences in how people perceive the world and make decisions.  In short, it can help you identify your “personality type”.</p>
+          <p>The original model of the MBTI was developed by two American researchers, Katharine Cook Briggs and her daughter Isabel Briggs Myers.  They based the concept on a theory proposed by Swiss psychiatrist Carl Jung, who speculated that people experience the world using four primary psychological functions: sensation, intuition, feeling, and thinking.  Briggs and Myers used this as the basis for their four category system: Introversion/Extroversion, Sensing/Intuition, Thinking/Feeling, Judging/Perception.</p>
+          <p>Each person is said to have one preferred quality from each category, resulting in 16 unique personality types.  Your preference for each category is represented by a letter which produced a four letter acronym representing your type (ex: INFJ:  Introversion, iNtuition, Feeling, Judging).</p>
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 bg-light">
+          <hr>
+          <h4 class="text-info text-center">Categories</h4>
+          <br>
+        <div class="col-lg-12 col-md-12 col-s-12 col-xs-12">
+          <h5 class="text-info text-center">Introversion/Extroversion (Attitude)</h5>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <img src="static/images/human-mind-icons/png/021-extrovert.png" class="w-50 ml-5 float-left">
+          </div>
+          <div class="col-lg-8 col-md-8 col-s-8 col-xs-8 text-center">
+            <p>Extroverts draw energy from action and recharge from spending time with people.  They tend to be action-oriented, seek breadth of knowledge and influence, and prefer more frequent interactions with others.</p>
+            <p>Introverts expend energy through action and recharge through quiet time alone.  They tend to be thought-oriented, seek depth of knowledge and influence, and prefer substantial interactions with others.</p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <img src="static/images/human-mind-icons/png/019-introvert.png" class="w-50 mr-5 float-right">
+          </div>
+        </div>
+          <br>
+        <div class="col-lg-12 col-md-12 col-s-12 col-xs-12">
+          <h5 class="text-info text-center">Sensing/Intuition (Information-Gathering/Perception)</h5>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <br>
+            <img src="static/images/human-mind-icons/png/026-vision.png" class="w-50 ml-5 float-left">
+          </div>
+          <div class="col-lg-8 col-md-8 col-s-8 col-xs-8 text-center">
+            <p>People who prefer sensing tend to trust information that is tangible, concrete, and can be understood with the five senses.  The rarely go with “gut feelings” or hunches that come out of nowhere.  Instead they depend on details and facts.  For them, the meaning is in the data.</p>
+            <p>People who prefer intuition tend to trust information that is less dependent on the senses and are more open to information from other sources.  They may be more interested in future possibilities.  For them, the meaning is in the underlying theory and principles behind the data.</p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <br>
+            <img src="static/images/human-mind-icons/png/010-idea.png" class="w-50 mr-5 float-right">
+          </div>
+        </div>
+          <br>
+        <div class="col-lg-12 col-md-12 col-s-12 col-xs-12">
+          <h5 class="text-info text-center">Thinking/Feeling (Decision-Making/Judging)</h5>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <br>
+            <img src="static/images/human-mind-icons/png/015-brain.png" class="w-50 ml-5 float-left">
+          </div>
+          <div class="col-lg-8 col-md-8 col-s-8 col-xs-8 text-center">
+            <p>Thinkers tend to decide things from a more detached standpoint, focusing on what seems reasonable, logical, consistent, and matching a given set of rules.  They believe in the importance of truth and give very direct feedback.</p>
+            <p>Feelers tend to come to decisions by associating or empathizing with the situation.  They weigh situations to achieve the greatest harmony and consensus considering the needs of the people involved.</p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <br>
+            <img src="static/images/human-mind-icons/png/034-empathy.png" class="w-50 mr-5 float-right">
+          </div>
+        </div>
+          <br>
+        <div class="col-lg-12 col-md-12 col-s-12 col-xs-12">
+          <h5 class="text-info text-center">Judging/Perception (Lifestyle)</h5>
+        </div>
+        <div class="row">
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <br>
+            <img src="static/images/human-mind-icons/png/001-thinking.png" class="w-50 ml-5 float-left">
+          </div>
+          <div class="col-lg-8 col-md-8 col-s-8 col-xs-8 text-center">
+            <p>People who prefer Judging show the world their judging function (Thinking or Feeling).  TJ types tend to appear to the world as logical and FJ types as empathetic.  Overall judging types like to “have matters settled”.</p>
+            <p>People who prefer Perception show the world their perceiving function (Sensing or Intuition).  SP types tend to appear to the world as concrete and NP types as abstract.  Overall perceptive types prefer to “keep decisions open”. </p>
+          </div>
+          <div class="col-lg-2 col-md-2 col-s-2 col-xs-2">
+            <br>
+            <img src="static/images/human-mind-icons/png/022-creative.png" class="w-50 mr-5 float-right">
+          </div>
+        </div>
+          <hr>
+          <br>
+        <div class="col-lg-12 col-md-12 col-s-12 col-xs-12">
+          <h4 class="text-info text-center">So Were We Right?</h4>
+        </div>
+          <p class="text-center">Do you think the prediction based on your social media posts is correct?  Or were we totally off?  Find out what your type is by taking the MBTI test here:
+            <br>
+            <a href="https://www.16personalities.com"><img src="static/images/personalities_logo.svg"></a></p>
+          <hr>
+          <div>Image from <a href="https://www.16personalities.com">16 Personalities</a></div>
+          <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--JavaScripts-->
+<!-- Anime-->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> -->
+<!--D3-->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+<!--My JS-->
+  <script src="static/js/header.js"></script>
+<!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>

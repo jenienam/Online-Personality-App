@@ -1,0 +1,26 @@
+.masthead {
+  height: 50vh;
+  min-height: 500px;
+  background-image: url('https://images.pexels.com/photos/1851415/pexels-photo-1851415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 3.5em;
+  color:black;
+  /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
+}
+
+.tagline {
+  font-weight: 300;
+  font-size: 2.5em;
+  color: black;
+  /* text-shadow: 1px 0 0 #000, 0 -1px 0 #000, 0 1px 0 #000, -1px 0 0 #000; */
+}
+
+body {
+  background-image: linear-gradient( #17a2b8 , white);
+}
